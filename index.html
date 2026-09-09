@@ -3,31 +3,42 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Allison&family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="styles.css" />
         <title>Brewing Cafe</title>
     </head>
     <body>
         <div class="container">
             <header class="header-section">
-                <a class="title">Brewing</a>
+                <div class="brand">
+                    <a class="title">Brewing</a>
+                    <span class="motto">Cafe Shop For Students</span>
+                </div>
                 <nav class="nav-section">
-                    <a href="#">Home</a>
+                    <a href="#"><span id="accent-color">Home</span></a>
                     <a href="#">About</a>
                     <a href="#">Menu</a>
                     <a href="#">Visit Us</a>
                     <a href="#">Contact</a>
                 </nav>
+                <button id="order-now-button" href="#">
+                    Order Now &rarr;
+                </button>
             </header>
             <main>
                 <section class="hero-section">
-                    <h1>Brewing.Sipping.Relaxing</h1>
-                    <p>
-                        Your neighborhood cafe for freshly brewed coffee,
-                        homemade treats, and good conversation
-                    </p>
-                    <button id="explore-button" href="#">
-                        Explore Our Menu
-                    </button>
+                    <div class="hero-container">
+                        <h1>Brewing<span id="accent-color">.</span>Sipping<span id="accent-color">.</span>Relaxing</h1>
+                        <small>
+                            Your neighborhood cafe for freshly brewed coffee,
+                            homemade treats, and good conversation
+                        </small>
+                        <button id="explore-button" href="#">
+                            Explore Our Menu &rarr;
+                        </button>
+                    </div>
                 </section>
                 <section class="about-section">
                     <div class="about-heading">
@@ -163,7 +174,7 @@
                 <div class="footer-main">
                     <div class="footer-title">
                         <a class="title">Brewing Cafe</a>
-                        <p>The go to cafe shop for students</p>
+                        <p>Cafe Shop For Students</p>
                         <div class="footer-contact-info">
                             <div>
                                 <img src="src/icon/facebook.png" />
