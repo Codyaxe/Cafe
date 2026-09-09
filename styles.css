@@ -1,0 +1,119 @@
+
+/* Visual Red Boxes */
+
+*, 
+*::before, 
+*::after {
+  outline: 1px solid #ff4d4d !important;
+  outline-offset: -1px !important;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, div {
+  background-color: rgba(255, 0, 0, 0.03) !important;
+}
+
+:root {
+  --primary-color: #491e00;   
+  --accent-color: #c97f00;    
+  --bg-color: #f4f6f7;       
+  --text-color: #000000;
+  --ratio: 1.25;
+
+  --step-0: 1rem;                               /* 16.00px*/
+  --step-1: calc(var(--step-0) * var(--ratio)); /* 20.00px */
+  --step-2: calc(var(--step-1) * var(--ratio)); /* 25.00px */
+  --step-3: calc(var(--step-2) * var(--ratio)); /* 31.25px */
+  --step-4: calc(var(--step-3) * var(--ratio)); /* 39.06px */
+  --step-5: calc(var(--step-4) * var(--ratio)); /* 48.83px */
+  
+ 
+  --step-xs: calc(var(--step-0) / var(--ratio)); /* 12.80px */
+
+  --container-max: 1200px;
+  --container-padding: clamp(1rem, 5vw, 2rem);
+
+
+  --space-3xs: 0.25rem; /* 4px */
+  --space-2xs: 0.5rem;  /* 8px */
+  --space-xs:  0.75rem; /* 12px */
+  --space-sm:  1rem;    /* 16px */
+  --space-md:  1.5rem;  /* 24px */
+  --space-lg:  2rem;    /* 32px */
+  --space-xl:  3rem;    /* 48px */
+  --space-2xl: 4rem;    /* 64px */
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    line-height: 1.5;
+    max-width: 65ch;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    min-height: 100vh;
+    margin: 0 auto;
+    
+}
+
+.container{
+    width: 100%
+}
+
+.nav-section{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    width: 32rem;
+    gap: var(--space-lg)
+}
+
+.nav-section a{
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+
+.title{
+    font-weight: bold;
+    font-size: var(--step-2);
+}
+
+header{
+    display: flex;
+}
+.header-section{
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--space-xl);
+}
+
+
+h1{
+    font-size: var(--step-5);
+}
+h2{
+    font-size: var(--step-4);
+}
+h3{
+    font-size: var(--step-3);
+}
+h4{
+    font-size: var(--step-2);
+}
+h5{
+    font-size: var(--step-1);
+}
+h6{
+    font-size: var(--step-0);
+}
+small{
+    font-size: var(--step-xs);
+}

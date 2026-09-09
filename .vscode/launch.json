@@ -1,0 +1,13 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name": "Dart: Run Current File (Integrated Terminal)",
+            "request": "launch",
+            "type": "dart",
+            "program": "${file}",
+            "console": "terminal"
+        }
+    ]
+}

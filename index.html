@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <title>Brewing Cafe</title>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header-section">
+                <a class="title">Brewing</a>
+                <nav class="nav-section">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Menu</a>
+                    <a href="#">Visit Us</a>
+                    <a href="#">Contact</a>
+                </nav>
+            </header>
+            <main>
+                <section class="hero-section">
+                    <h1>Brewing.Sipping.Relaxing</h1>
+                    <p>
+                        Your neighborhood cafe for freshly brewed coffee,
+                        homemade treats, and good conversation
+                    </p>
+                    <button id="explore-button" href="#">
+                        Explore Our Menu
+                    </button>
+                </section>
+                <section class="about-section">
+                    <div class="about-heading">
+                        <div class="about-home">
+                            <h2>About Us</h2>
+                            <p>
+                                Brewing Cafe was created as a cozy space where
+                                people can slow down, enjoy great coffee, and
+                                connect with others. We served freshly brewed
+                                coffee, handcrafted drinks, pastries, and light
+                                meals prepared with quality ingredients.
+                            </p>
+                        </div>
+                        <div class="about-image">
+                            <img
+                                src="src/about-image.png"
+                                alt="About Cafe Image"
+                            />
+                        </div>
+                    </div>
+                    <div class="about-highlights">
+                        <div class="about-card">
+                            <img src="src/icon/coffee.png" />
+                            <h3>Freshly Brewed</h3>
+                        </div>
+                        <div class="about-card">
+                            <img src="src/icon/beans.png" />
+                            <h3>Locally Sourced</h3>
+                        </div>
+                        <div class="about-card">
+                            <img src="src/icon/care.png" />
+                            <h3>Made with Care</h3>
+                        </div>
+                    </div>
+                </section>
+                <section class="product-section">
+                    <div class="product-card" id="classic-latte">
+                        <h3>Classic Latte</h3>
+                        <p>Espresso blended with steamed milk.</p>
+                        <h4>₱140</h4>
+                    </div>
+                    <div class="product-card" id="caramel-macchiato">
+                        <h3>Caramel Macchiato</h3>
+                        <p>Espresso, steamed milk, and caramel.</p>
+                        <h4>₱155</h4>
+                    </div>
+                    <div class="product-card" id="spanish-latte">
+                        <h3>Spanish Latte</h3>
+                        <p>Rich espresso with sweetened milk.</p>
+                        <h4>₱150</h4>
+                    </div>
+                    <div class="product-card" id="matcha-cream-latte">
+                        <h3>Matcha Cream Latte</h3>
+                        <p>Smooth matcha with creamy milk.</p>
+                        <h4>₱160</h4>
+                    </div>
+                    <div class="product-card" id="chocolate-croissant">
+                        <h3>Chocolate Croissant</h3>
+                        <p>Buttery pastry filled with chocolate.</p>
+                        <h4>₱120</h4>
+                    </div>
+                    <div class="product-card" id="blueberry-cheescake">
+                        <h3>Blueberry Cheesecake</h3>
+                        <p>Creamy cheesecake with blueberry toppings.</p>
+                        <h4>₱175</h4>
+                    </div>
+                </section>
+                <section class="special-offer-section">
+                    <div>
+                        <h2>Study Break Special</h2>
+                        <h4>
+                            Get any regular coffee + pastry for only
+                            <span id="special-strong">₱199</span>
+                        </h4>
+                    </div>
+                    <button id="offer-button">Grab the Offer</button>
+                </section>
+                <section class="visit-us-section">
+                    <div class="visit-us-heading">
+                        <h3>Visit Brewing Cafe</h3>
+                    </div>
+                    <div id="map-placeholder"></div>
+                    <div class="visit-us-info">
+                        <div>
+                            <h4>Opening Hours:</h4>
+                            <p>Monday – Saturday</p>
+                            <p>7:00AM – 9:00PM</p>
+                            <p>Sunday</p>
+                            <p>8:00AM – 6:00PM</p>
+                        </div>
+                        <div class="visit-us-contact-info">
+                            <div>
+                                <img src="src/icon/phone.png" />
+                                <p>(043) 123-4567</p>
+                            </div>
+                            <div>
+                                <img src="src/icon/email.png" />
+                                <p>brewingcafe@brewed.caf</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="contact-section">
+                    <div id="contact-cafe-image"></div>
+                    <div class="contact-form">
+                        <p>Full Name</p>
+                        <input
+                            type="text"
+                            class="text-input-style"
+                            placeholder="Type your Full Name here..."
+                        />
+                        <p>Email Address</p>
+                        <input
+                            type="email"
+                            class="text-input-style"
+                            placeholder="Type your Email Address here..."
+                        />
+                        <p>Subject</p>
+                        <input
+                            type="text"
+                            class="text-input-style"
+                            placeholder="Type your Subject here..."
+                        />
+                        <p>Message</p>
+                        <textarea
+                            class="text-input-style"
+                            placeholder="Type your Subject here..."
+                        ></textarea>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <div class="footer-main">
+                    <div class="footer-title">
+                        <a class="title">Brewing Cafe</a>
+                        <p>The go to cafe shop for students</p>
+                        <div class="footer-contact-info">
+                            <div>
+                                <img src="src/icon/facebook.png" />
+                            </div>
+                            <div>
+                                <img src="src/icon/instagram.png" />
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-nav">
+                        <p>Navigate</p>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Menu</a></li>
+                            <li><a href="#">Visit Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                        <p>Resource</p>
+                        <ul>
+                            <li><a href="#">Our Story</a></li>
+                            <li><a href="#">Recipes</a></li>
+                            <li><a href="#">Staffs</a></li>
+                            <li><a href="#">Gallery</a></li>
+                            <li><a href="#">FAQs</a></li>
+                        </ul>
+                        <p>Contact Us</p>
+                        <ul>
+                            <li><a href="#">(043) 123-4567</a></li>
+                            <li><a href="#">brewingcafe@brewed.caf</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <p>© 2026 Brewing Cafe. All Rights Reserved.</p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
