@@ -6,10 +6,11 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Allison&family=Amatic+SC:wght@400;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Allison&family=Amatic+SC:wght@400;700&family=Montserrat:wght@700;800;900&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="css/style.css?v=2" />
+        <link rel="stylesheet" href="css/style.css?v=7" />
+        <link rel="stylesheet" href="css/style.css?v=8" />
         <title>Brewing Cafe</title>
     </head>
     <body>
@@ -38,10 +39,37 @@
                 </button>
             </header>
             <main>
-                <section class="hero-section" id="home">
+                <section
+                    class="hero-section"
+                    id="home"
+                    style="
+                        background-image:
+                            linear-gradient(
+                                90deg,
+                                rgba(0, 0, 0, 0.2) 0%,
+                                rgba(0, 0, 0, 0.55) 45%,
+                                rgba(0, 0, 0, 0.95) 68%,
+                                #000000 100%
+                            ),
+                            url(&quot;images/hero.jpg&quot;);
+                        background-size: cover;
+                        background-position: left center;
+                        background-repeat: no-repeat;
+                    "
+                >
                     <div class="hero-container">
                         <div class="hero-content">
-                            <h1>
+                            <h1
+                                style="
+                                    font-family:
+                                        &quot;Amatic SC&quot;, cursive,
+                                        sans-serif !important;
+                                    font-size: clamp(3.5rem, 7vw, 5.5rem);
+                                    font-weight: 700;
+                                    letter-spacing: 0.02em;
+                                    line-height: 1;
+                                "
+                            >
                                 <span class="hero-word"
                                     >Brewing<span class="accent-color"
                                         >.</span
@@ -72,55 +100,87 @@
                     <div class="about-heading">
                         <div class="about-home">
                             <h2>About Us</h2>
-                            <p>
-                                Brewing Cafe was created as a cozy space where
-                                people can slow down, enjoy great coffee, and
-                                connect with others. We served freshly brewed
-                                coffee, handcrafted drinks, pastries, and light
-                                meals prepared with quality ingredients.
-                            </p>
+                            <blockquote class="about-pullquote">
+                                <span class="quote-mark" aria-hidden="true"
+                                    >&ldquo;</span
+                                >
+                                <p>
+                                    Brewing Cafe was created as a cozy space
+                                    where people can slow down, enjoy great
+                                    coffee, and connect with others. We serve
+                                    freshly brewed coffee, handcrafted drinks,
+                                    pastries, and light meals prepared with
+                                    quality ingredients.
+                                </p>
+                            </blockquote>
                         </div>
-                        <div class="about-image">
-                            <img
-                                src="images/about.jpg"
-                                alt="About Cafe Image"
-                            />
+                        <div class="about-image-frame">
+                            <div class="image-frame-card">
+                                <img
+                                    src="images/about.jpg"
+                                    alt="University Sanctuary Cafe Atmosphere"
+                                />
+                                <div class="image-frame-badge">
+                                    <span class="badge-title"
+                                        >University Sanctuary</span
+                                    >
+                                    <span class="badge-subtitle"
+                                        >Your Study Haven &bull; Est. 2024</span
+                                    >
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <hr class="about-divider" />
                     <div class="about-highlights">
                         <article class="about-card">
-                            <img
-                                src="images/logo/coffee.png"
-                                alt="Freshly Brewed Icon"
-                            />
-                            <h3>Freshly Brewed</h3>
-                            <p>
-                                Hand-poured daily using precision roast profiles
-                                for maximum aroma and flavor.
-                            </p>
+                            <span class="highlight-number">01</span>
+                            <div class="highlight-content">
+                                <img
+                                    src="images/logo/coffee.png"
+                                    alt="Freshly Brewed Icon"
+                                />
+                                <h3>Freshly Brewed</h3>
+                                <span class="highlight-tag"
+                                    >Artisan Roasts</span
+                                >
+                                <p>
+                                    Hand-poured daily using precision roast
+                                    profiles for maximum aroma and flavor.
+                                </p>
+                            </div>
                         </article>
                         <article class="about-card">
-                            <img
-                                src="images/logo/beans.png"
-                                alt="Locally Sourced Icon"
-                            />
-                            <h3>Locally Sourced</h3>
-                            <p>
-                                Directly supporting local Philippine coffee
-                                farmers and premium highland bean harvests.
-                            </p>
+                            <span class="highlight-number">02</span>
+                            <div class="highlight-content">
+                                <img
+                                    src="images/logo/beans.png"
+                                    alt="Locally Sourced Icon"
+                                />
+                                <h3>Locally Sourced</h3>
+                                <span class="highlight-tag">Direct Trade</span>
+                                <p>
+                                    Directly supporting local Philippine coffee
+                                    farmers and premium highland bean harvests.
+                                </p>
+                            </div>
                         </article>
                         <article class="about-card">
-                            <img
-                                src="images/logo/care.png"
-                                alt="Made with Care Icon"
-                            />
-                            <h3>Made with Care</h3>
-                            <p>
-                                Handcrafted drinks and fresh homemade pastries
-                                prepared with quality ingredients.
-                            </p>
+                            <span class="highlight-number">03</span>
+                            <div class="highlight-content">
+                                <img
+                                    src="images/logo/care.png"
+                                    alt="Made with Care Icon"
+                                />
+                                <h3>Made with Care</h3>
+                                <span class="highlight-tag"
+                                    >Craft &amp; Heart</span
+                                >
+                                <p>
+                                    Handcrafted drinks and fresh homemade
+                                    pastries prepared with quality ingredients.
+                                </p>
+                            </div>
                         </article>
                     </div>
                 </section>
@@ -131,45 +191,58 @@
                     <div class="product-grid">
                         <article class="product-card" id="classic-latte">
                             <div class="product-info">
-                                <h3>Classic Latte</h3>
-                                <p>Espresso blended with steamed milk.</p>
+                                <div class="product-details">
+                                    <h3>Classic Latte</h3>
+                                    <p>Espresso blended with steamed milk.</p>
+                                </div>
                                 <span class="product-price">₱140</span>
                             </div>
                         </article>
                         <article class="product-card" id="caramel-macchiato">
                             <div class="product-info">
-                                <h3>Caramel Macchiato</h3>
-                                <p>Espresso, steamed milk, and caramel.</p>
+                                <div class="product-details">
+                                    <h3>Caramel Macchiato</h3>
+                                    <p>Espresso, steamed milk, and caramel.</p>
+                                </div>
                                 <span class="product-price">₱155</span>
                             </div>
                         </article>
                         <article class="product-card" id="spanish-latte">
                             <div class="product-info">
-                                <h3>Spanish Latte</h3>
-                                <p>Rich espresso with sweetened milk.</p>
+                                <div class="product-details">
+                                    <h3>Spanish Latte</h3>
+                                    <p>Rich espresso with sweetened milk.</p>
+                                </div>
                                 <span class="product-price">₱150</span>
                             </div>
                         </article>
                         <article class="product-card" id="matcha-cream-latte">
                             <div class="product-info">
-                                <h3>Matcha Cream Latte</h3>
-                                <p>Smooth matcha with creamy milk.</p>
+                                <div class="product-details">
+                                    <h3>Matcha Cream Latte</h3>
+                                    <p>Smooth matcha with creamy milk.</p>
+                                </div>
                                 <span class="product-price">₱160</span>
                             </div>
                         </article>
                         <article class="product-card" id="chocolate-croissant">
                             <div class="product-info">
-                                <h3>Chocolate Croissant</h3>
-                                <p>Buttery pastry filled with chocolate.</p>
+                                <div class="product-details">
+                                    <h3>Chocolate Croissant</h3>
+                                    <p>Buttery pastry filled with chocolate.</p>
+                                </div>
                                 <span class="product-price">₱120</span>
                             </div>
                         </article>
                         <article class="product-card" id="blueberry-cheesecake">
                             <div class="product-info">
-                                <h3>Blueberry Cheesecake</h3>
-                                <p>
-                                    Creamy cheesecake with blueberry toppings.
-                                </p>
+                                <div class="product-details">
+                                    <h3>Blueberry Cheesecake</h3>
+                                    <p>
+                                        Creamy cheesecake with blueberry
+                                        toppings.
+                                    </p>
+                                </div>
                                 <span class="product-price">₱175</span>
                             </div>
                         </article>
@@ -178,7 +251,11 @@
                 <section class="special-offer-section">
                     <div class="special-offer-ticket">
                         <div class="ticket-content">
-                            <h2>Study Break Special</h2>
+                            <span class="special-badge">LIMITED TIME ONLY</span>
+                            <h2 class="special-heading-stacked">
+                                <span>Study Break</span>
+                                <span>Special</span>
+                            </h2>
                             <p>Get any regular coffee + pastry for only</p>
                             <p><span id="special-strong">₱199</span></p>
                         </div>
@@ -191,15 +268,25 @@
                     </div>
                     <div class="visit-us-container">
                         <div id="map-placeholder"></div>
-                        <div class="visit-us-info">
-                            <div class="visit-us-address">
-                                <h4>Address</h4>
+                        <div class="visit-info-ribbon">
+                            <div class="ribbon-col ribbon-location">
+                                <span class="ribbon-label">Location</span>
+                                <h4>Batangas City</h4>
                                 <p>123 University Avenue, Batangas City</p>
+                                <a
+                                    href="https://maps.google.com"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="directions-link"
+                                >
+                                    Get Directions &rarr;
+                                </a>
                             </div>
-                            <div class="visit-us-hours">
-                                <h4>Opening Hours</h4>
+                            <div class="ribbon-col ribbon-hours">
+                                <span class="ribbon-label">Hours</span>
+                                <h4>Daily Schedule</h4>
                                 <div class="hours-row">
-                                    <span class="days">Monday – Saturday:</span>
+                                    <span class="days">Mon – Sat:</span>
                                     <span class="time">7:00 AM – 9:00 PM</span>
                                 </div>
                                 <div class="hours-row">
@@ -207,7 +294,9 @@
                                     <span class="time">8:00 AM – 6:00 PM</span>
                                 </div>
                             </div>
-                            <div class="visit-us-contact-info">
+                            <div class="ribbon-col ribbon-contact">
+                                <span class="ribbon-label">Inquiries</span>
+                                <h4>Get in Touch</h4>
                                 <div class="contact-row">
                                     <img
                                         src="images/logo/phone.png"
