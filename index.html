@@ -6,7 +6,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Allison&family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet" />
-        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="css/style.css?v=2" />
         <title>Brewing Cafe</title>
     </head>
     <body>
@@ -17,30 +17,36 @@
                     <span class="motto">Cafe Shop For Students</span>
                 </div>
                 <nav class="nav-section">
-                    <a href="#"><span id="accent-color">Home</span></a>
-                    <a href="#">About</a>
-                    <a href="#">Menu</a>
-                    <a href="#">Visit Us</a>
-                    <a href="#">Contact</a>
+                    <a href="#home"><span id="accent-color">Home</span></a>
+                    <a href="#about">About</a>
+                    <a href="#menu">Menu</a>
+                    <a href="#visit-us">Visit Us</a>
+                    <a href="#contact">Contact</a>
                 </nav>
-                <button id="order-now-button" href="#">
+                <button id="order-now-button" onclick="document.getElementById('menu').scrollIntoView({behavior: 'smooth'})">
                     Order Now &rarr;
                 </button>
             </header>
             <main>
-                <section class="hero-section">
+                <section class="hero-section" id="home">
                     <div class="hero-container">
-                        <h1>Brewing<span id="accent-color">.</span>Sipping<span id="accent-color">.</span>Relaxing</h1>
-                        <small>
-                            Your neighborhood cafe for freshly brewed coffee,
-                            homemade treats, and good conversation
-                        </small>
-                        <button id="explore-button" href="#">
-                            Explore Our Menu &rarr;
-                        </button>
+                        <div class="hero-content">
+                            <h1>
+                                <span class="hero-word">Brewing<span id="accent-color">.</span></span>
+                                <span class="hero-word">Sipping<span id="accent-color">.</span></span>
+                                <span class="hero-word">Relaxing</span>
+                            </h1>
+                            <small>
+                                Your neighborhood cafe for freshly brewed coffee,
+                                homemade treats, and good conversation
+                            </small>
+                            <a id="explore-button" href="#menu">
+                                Explore Our Menu &rarr;
+                            </a>
+                        </div>
                     </div>
                 </section>
-                <section class="about-section">
+                <section class="about-section" id="about">
                     <div class="about-heading">
                         <div class="about-home">
                             <h2>About Us</h2>
@@ -54,159 +60,213 @@
                         </div>
                         <div class="about-image">
                             <img
-                                src="src/about-image.png"
+                                src="images/about.jpg"
                                 alt="About Cafe Image"
                             />
                         </div>
                     </div>
+                    <hr class="about-divider" />
                     <div class="about-highlights">
-                        <div class="about-card">
-                            <img src="src/icon/coffee.png" />
+                        <article class="about-card">
+                            <img src="images/logo/coffee.png" alt="Freshly Brewed Icon" />
                             <h3>Freshly Brewed</h3>
-                        </div>
-                        <div class="about-card">
-                            <img src="src/icon/beans.png" />
+                            <p>Hand-poured daily using precision roast profiles for maximum aroma and flavor.</p>
+                        </article>
+                        <article class="about-card">
+                            <img src="images/logo/beans.png" alt="Locally Sourced Icon" />
                             <h3>Locally Sourced</h3>
-                        </div>
-                        <div class="about-card">
-                            <img src="src/icon/care.png" />
+                            <p>Directly supporting local Philippine coffee farmers and premium highland bean harvests.</p>
+                        </article>
+                        <article class="about-card">
+                            <img src="images/logo/care.png" alt="Made with Care Icon" />
                             <h3>Made with Care</h3>
-                        </div>
+                            <p>Handcrafted drinks and fresh homemade pastries prepared with quality ingredients.</p>
+                        </article>
                     </div>
                 </section>
-                <section class="product-section">
-                    <div class="product-card" id="classic-latte">
-                        <h3>Classic Latte</h3>
-                        <p>Espresso blended with steamed milk.</p>
-                        <h4>₱140</h4>
+                <section class="product-section" id="menu">
+                    <div class="product-header">
+                        <h2>Our Menu</h2>
                     </div>
-                    <div class="product-card" id="caramel-macchiato">
-                        <h3>Caramel Macchiato</h3>
-                        <p>Espresso, steamed milk, and caramel.</p>
-                        <h4>₱155</h4>
-                    </div>
-                    <div class="product-card" id="spanish-latte">
-                        <h3>Spanish Latte</h3>
-                        <p>Rich espresso with sweetened milk.</p>
-                        <h4>₱150</h4>
-                    </div>
-                    <div class="product-card" id="matcha-cream-latte">
-                        <h3>Matcha Cream Latte</h3>
-                        <p>Smooth matcha with creamy milk.</p>
-                        <h4>₱160</h4>
-                    </div>
-                    <div class="product-card" id="chocolate-croissant">
-                        <h3>Chocolate Croissant</h3>
-                        <p>Buttery pastry filled with chocolate.</p>
-                        <h4>₱120</h4>
-                    </div>
-                    <div class="product-card" id="blueberry-cheescake">
-                        <h3>Blueberry Cheesecake</h3>
-                        <p>Creamy cheesecake with blueberry toppings.</p>
-                        <h4>₱175</h4>
+                    <div class="product-grid">
+                        <article class="product-card" id="classic-latte">
+                            <div class="product-info">
+                                <h3>Classic Latte</h3>
+                                <p>Espresso blended with steamed milk.</p>
+                                <span class="product-price">₱140</span>
+                            </div>
+                        </article>
+                        <article class="product-card" id="caramel-macchiato">
+                            <div class="product-info">
+                                <h3>Caramel Macchiato</h3>
+                                <p>Espresso, steamed milk, and caramel.</p>
+                                <span class="product-price">₱155</span>
+                            </div>
+                        </article>
+                        <article class="product-card" id="spanish-latte">
+                            <div class="product-info">
+                                <h3>Spanish Latte</h3>
+                                <p>Rich espresso with sweetened milk.</p>
+                                <span class="product-price">₱150</span>
+                            </div>
+                        </article>
+                        <article class="product-card" id="matcha-cream-latte">
+                            <div class="product-info">
+                                <h3>Matcha Cream Latte</h3>
+                                <p>Smooth matcha with creamy milk.</p>
+                                <span class="product-price">₱160</span>
+                            </div>
+                        </article>
+                        <article class="product-card" id="chocolate-croissant">
+                            <div class="product-info">
+                                <h3>Chocolate Croissant</h3>
+                                <p>Buttery pastry filled with chocolate.</p>
+                                <span class="product-price">₱120</span>
+                            </div>
+                        </article>
+                        <article class="product-card" id="blueberry-cheesecake">
+                            <div class="product-info">
+                                <h3>Blueberry Cheesecake</h3>
+                                <p>Creamy cheesecake with blueberry toppings.</p>
+                                <span class="product-price">₱175</span>
+                            </div>
+                        </article>
                     </div>
                 </section>
                 <section class="special-offer-section">
-                    <div>
-                        <h2>Study Break Special</h2>
-                        <h4>
-                            Get any regular coffee + pastry for only
-                            <span id="special-strong">₱199</span>
-                        </h4>
+                    <div class="special-offer-ticket">
+                        <div class="ticket-content">
+                            <h2>Study Break Special</h2>
+                            <p>
+                                Get any regular coffee + pastry for only
+                                
+                            </p>
+                            <p><span id="special-strong">₱199</span></p>
+                        </div>
+                        <button id="offer-button">Grab the Offer &rarr;</button>
                     </div>
-                    <button id="offer-button">Grab the Offer</button>
                 </section>
-                <section class="visit-us-section">
+                <section class="visit-us-section" id="visit-us">
                     <div class="visit-us-heading">
-                        <h3>Visit Brewing Cafe</h3>
+                        <h2>Visit Brewing Cafe</h2>
                     </div>
-                    <div id="map-placeholder"></div>
-                    <div class="visit-us-info">
-                        <div>
-                            <h4>Opening Hours:</h4>
-                            <p>Monday – Saturday</p>
-                            <p>7:00AM – 9:00PM</p>
-                            <p>Sunday</p>
-                            <p>8:00AM – 6:00PM</p>
-                        </div>
-                        <div class="visit-us-contact-info">
-                            <div>
-                                <img src="src/icon/phone.png" />
-                                <p>(043) 123-4567</p>
+                    <div class="visit-us-container">
+                        <div id="map-placeholder"></div>
+                        <div class="visit-us-info">
+                            <div class="visit-us-address">
+                                <h4>Address</h4>
+                                <p>123 University Avenue, Batangas City</p>
                             </div>
-                            <div>
-                                <img src="src/icon/email.png" />
-                                <p>brewingcafe@brewed.caf</p>
+                            <div class="visit-us-hours">
+                                <h4>Opening Hours</h4>
+                                <div class="hours-row">
+                                    <span class="days">Monday – Saturday:</span>
+                                    <span class="time">7:00 AM – 9:00 PM</span>
+                                </div>
+                                <div class="hours-row">
+                                    <span class="days">Sunday:</span>
+                                    <span class="time">8:00 AM – 6:00 PM</span>
+                                </div>
+                            </div>
+                            <div class="visit-us-contact-info">
+                                <div class="contact-row">
+                                    <img src="images/logo/phone.png" alt="Phone Icon" />
+                                    <span>(043) 123-4567</span>
+                                </div>
+                                <div class="contact-row">
+                                    <img src="images/logo/email.png" alt="Email Icon" />
+                                    <span>brewingcafe@brewed.caf</span>
+                                </div>
                             </div>
                         </div>
+                        <hr class="visit-us-divider section-divider" />
                     </div>
                 </section>
-                <section class="contact-section">
+                <div class="contact-heading">
+                    <h2>Contact Us</h2>
+                </div>
+                <section class="contact-section" id="contact">
                     <div id="contact-cafe-image"></div>
-                    <div class="contact-form">
+                    <form class="contact-form" action="#" method="POST">
                         <p>Full Name</p>
                         <input
                             type="text"
                             class="text-input-style"
                             placeholder="Type your Full Name here..."
+                            required
                         />
                         <p>Email Address</p>
                         <input
                             type="email"
                             class="text-input-style"
                             placeholder="Type your Email Address here..."
+                            required
                         />
                         <p>Subject</p>
                         <input
                             type="text"
                             class="text-input-style"
                             placeholder="Type your Subject here..."
+                            required
                         />
                         <p>Message</p>
                         <textarea
                             class="text-input-style"
-                            placeholder="Type your Subject here..."
+                            placeholder="Type your Message here..."
+                            required
                         ></textarea>
-                    </div>
+                        <button id="contact-button" type="submit">Submit &rarr;</button>
+                    </form>
                 </section>
             </main>
-            <footer>
+            <footer class="footer-section">
                 <div class="footer-main">
-                    <div class="footer-title">
-                        <a class="title">Brewing Cafe</a>
-                        <p>Cafe Shop For Students</p>
+                    <div class="footer-brand">
+                        <a class="title">Brewing</a>
+                        <span class="motto">Cafe Shop For Students</span>
+                        <p class="footer-desc">
+                            Your cozy neighborhood cafe for freshly brewed coffee, homemade treats, and inspiring study sessions.
+                        </p>
                         <div class="footer-contact-info">
-                            <div>
-                                <img src="src/icon/facebook.png" />
+                            <div class="footer-contact-row">
+                                <img src="images/logo/phone.png" alt="Phone" />
+                                <span>(043) 123-4567</span>
                             </div>
-                            <div>
-                                <img src="src/icon/instagram.png" />
-                                <p></p>
+                            <div class="footer-contact-row">
+                                <img src="images/logo/email.png" alt="Email" />
+                                <span>brewingcafe@brewed.caf</span>
                             </div>
                         </div>
                     </div>
-                    <div class="footer-nav">
-                        <p>Navigate</p>
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Menu</a></li>
-                            <li><a href="#">Visit Us</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                        </ul>
-                        <p>Resource</p>
-                        <ul>
-                            <li><a href="#">Our Story</a></li>
-                            <li><a href="#">Recipes</a></li>
-                            <li><a href="#">Staffs</a></li>
-                            <li><a href="#">Gallery</a></li>
-                            <li><a href="#">FAQs</a></li>
-                        </ul>
-                        <p>Contact Us</p>
-                        <ul>
-                            <li><a href="#">(043) 123-4567</a></li>
-                            <li><a href="#">brewingcafe@brewed.caf</a></li>
-                        </ul>
+                    
+                    <div class="footer-links-group">
+                        <div class="footer-column">
+                            <h4>Navigate</h4>
+                            <ul>
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#menu">Menu</a></li>
+                                <li><a href="#visit-us">Visit Us</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h4>Resource</h4>
+                            <ul>
+                                <li><a href="#">Our Story</a></li>
+                                <li><a href="#">Recipes</a></li>
+                                <li><a href="#">Staffs</a></li>
+                                <li><a href="#">Gallery</a></li>
+                                <li><a href="#">FAQs</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h4>Opening Hours</h4>
+                            <ul>
+                                <li><span class="day">Mon – Sat:</span> 7AM – 9PM</li>
+                                <li><span class="day">Sunday:</span> 8AM – 6PM</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="footer-copyright">
