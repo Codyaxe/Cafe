@@ -5,7 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Allison&family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Allison&family=Amatic+SC:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="css/style.css?v=2" />
         <title>Brewing Cafe</title>
     </head>
@@ -17,13 +20,20 @@
                     <span class="motto">Cafe Shop For Students</span>
                 </div>
                 <nav class="nav-section">
-                    <a href="#home"><span id="accent-color">Home</span></a>
+                    <a href="#home"><span class="accent-color">Home</span></a>
                     <a href="#about">About</a>
                     <a href="#menu">Menu</a>
                     <a href="#visit-us">Visit Us</a>
                     <a href="#contact">Contact</a>
                 </nav>
-                <button id="order-now-button" onclick="document.getElementById('menu').scrollIntoView({behavior: 'smooth'})">
+                <button
+                    id="order-now-button"
+                    onclick="
+                        document
+                            .getElementById('menu')
+                            .scrollIntoView({ behavior: 'smooth' })
+                    "
+                >
                     Order Now &rarr;
                 </button>
             </header>
@@ -32,13 +42,25 @@
                     <div class="hero-container">
                         <div class="hero-content">
                             <h1>
-                                <span class="hero-word">Brewing<span id="accent-color">.</span></span>
-                                <span class="hero-word">Sipping<span id="accent-color">.</span></span>
-                                <span class="hero-word">Relaxing<span id="accent-color">.</span></span>
+                                <span class="hero-word"
+                                    >Brewing<span class="accent-color"
+                                        >.</span
+                                    ></span
+                                >
+                                <span class="hero-word"
+                                    >Sipping<span class="accent-color"
+                                        >.</span
+                                    ></span
+                                >
+                                <span class="hero-word"
+                                    >Relaxing<span class="accent-color"
+                                        >.</span
+                                    ></span
+                                >
                             </h1>
                             <small>
-                                Your neighborhood cafe for freshly brewed coffee,
-                                homemade treats, and good conversation
+                                Your neighborhood cafe for freshly brewed
+                                coffee, homemade treats, and good conversation
                             </small>
                             <a id="explore-button" href="#menu">
                                 Explore Our Menu &rarr;
@@ -68,19 +90,37 @@
                     <hr class="about-divider" />
                     <div class="about-highlights">
                         <article class="about-card">
-                            <img src="images/logo/coffee.png" alt="Freshly Brewed Icon" />
+                            <img
+                                src="images/logo/coffee.png"
+                                alt="Freshly Brewed Icon"
+                            />
                             <h3>Freshly Brewed</h3>
-                            <p>Hand-poured daily using precision roast profiles for maximum aroma and flavor.</p>
+                            <p>
+                                Hand-poured daily using precision roast profiles
+                                for maximum aroma and flavor.
+                            </p>
                         </article>
                         <article class="about-card">
-                            <img src="images/logo/beans.png" alt="Locally Sourced Icon" />
+                            <img
+                                src="images/logo/beans.png"
+                                alt="Locally Sourced Icon"
+                            />
                             <h3>Locally Sourced</h3>
-                            <p>Directly supporting local Philippine coffee farmers and premium highland bean harvests.</p>
+                            <p>
+                                Directly supporting local Philippine coffee
+                                farmers and premium highland bean harvests.
+                            </p>
                         </article>
                         <article class="about-card">
-                            <img src="images/logo/care.png" alt="Made with Care Icon" />
+                            <img
+                                src="images/logo/care.png"
+                                alt="Made with Care Icon"
+                            />
                             <h3>Made with Care</h3>
-                            <p>Handcrafted drinks and fresh homemade pastries prepared with quality ingredients.</p>
+                            <p>
+                                Handcrafted drinks and fresh homemade pastries
+                                prepared with quality ingredients.
+                            </p>
                         </article>
                     </div>
                 </section>
@@ -127,7 +167,9 @@
                         <article class="product-card" id="blueberry-cheesecake">
                             <div class="product-info">
                                 <h3>Blueberry Cheesecake</h3>
-                                <p>Creamy cheesecake with blueberry toppings.</p>
+                                <p>
+                                    Creamy cheesecake with blueberry toppings.
+                                </p>
                                 <span class="product-price">₱175</span>
                             </div>
                         </article>
@@ -137,10 +179,7 @@
                     <div class="special-offer-ticket">
                         <div class="ticket-content">
                             <h2>Study Break Special</h2>
-                            <p>
-                                Get any regular coffee + pastry for only
-                                
-                            </p>
+                            <p>Get any regular coffee + pastry for only</p>
                             <p><span id="special-strong">₱199</span></p>
                         </div>
                         <button id="offer-button">Grab the Offer &rarr;</button>
@@ -170,11 +209,17 @@
                             </div>
                             <div class="visit-us-contact-info">
                                 <div class="contact-row">
-                                    <img src="images/logo/phone.png" alt="Phone Icon" />
+                                    <img
+                                        src="images/logo/phone.png"
+                                        alt="Phone Icon"
+                                    />
                                     <span>(043) 123-4567</span>
                                 </div>
                                 <div class="contact-row">
-                                    <img src="images/logo/email.png" alt="Email Icon" />
+                                    <img
+                                        src="images/logo/email.png"
+                                        alt="Email Icon"
+                                    />
                                     <span>brewingcafe@brewed.caf</span>
                                 </div>
                             </div>
@@ -188,34 +233,44 @@
                 <section class="contact-section" id="contact">
                     <div id="contact-cafe-image"></div>
                     <form class="contact-form" action="#" method="POST">
-                        <p>Full Name</p>
+                        <label for="contact-name">Full Name</label>
                         <input
                             type="text"
+                            id="contact-name"
+                            name="name"
                             class="text-input-style"
                             placeholder="Type your Full Name here..."
                             required
                         />
-                        <p>Email Address</p>
+                        <label for="contact-email">Email Address</label>
                         <input
                             type="email"
+                            id="contact-email"
+                            name="email"
                             class="text-input-style"
                             placeholder="Type your Email Address here..."
                             required
                         />
-                        <p>Subject</p>
+                        <label for="contact-subject">Subject</label>
                         <input
                             type="text"
+                            id="contact-subject"
+                            name="subject"
                             class="text-input-style"
                             placeholder="Type your Subject here..."
                             required
                         />
-                        <p>Message</p>
+                        <label for="contact-message">Message</label>
                         <textarea
+                            id="contact-message"
+                            name="message"
                             class="text-input-style"
                             placeholder="Type your Message here..."
                             required
                         ></textarea>
-                        <button id="contact-button" type="submit">Submit &rarr;</button>
+                        <button id="contact-button" type="submit">
+                            Submit &rarr;
+                        </button>
                     </form>
                 </section>
             </main>
@@ -225,7 +280,9 @@
                         <a class="title">Brewing</a>
                         <span class="motto">Cafe Shop For Students</span>
                         <p class="footer-desc">
-                            Your cozy neighborhood cafe for freshly brewed coffee, homemade treats, and inspiring study sessions.
+                            Your cozy neighborhood cafe for freshly brewed
+                            coffee, homemade treats, and inspiring study
+                            sessions.
                         </p>
                         <div class="footer-contact-info">
                             <div class="footer-contact-row">
@@ -238,7 +295,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="footer-links-group">
                         <div class="footer-column">
                             <h4>Navigate</h4>
@@ -263,8 +320,13 @@
                         <div class="footer-column">
                             <h4>Opening Hours</h4>
                             <ul>
-                                <li><span class="day">Mon – Sat:</span> 7AM – 9PM</li>
-                                <li><span class="day">Sunday:</span> 8AM – 6PM</li>
+                                <li>
+                                    <span class="day">Mon – Sat:</span> 7AM –
+                                    9PM
+                                </li>
+                                <li>
+                                    <span class="day">Sunday:</span> 8AM – 6PM
+                                </li>
                             </ul>
                         </div>
                     </div>
