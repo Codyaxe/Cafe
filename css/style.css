@@ -58,7 +58,7 @@ html {
 }
 
 body {
-    font-family: "Times New Roman", Times, serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.5;
     background-color: var(--bg-color);
     color: var(--text-color);
@@ -127,8 +127,7 @@ header {
             rgba(253, 251, 247, 0.3) 0%,
             rgba(250, 232, 216, 0.65) 40%,
             rgba(246, 207, 184, 0.92) 65%,
-            #f6cfb8 100%
-            rgba(0, 0, 0, 0.2) 0%,
+            #f6cfb8 100% rgba(0, 0, 0, 0.2) 0%,
             rgba(0, 0, 0, 0.55) 45%,
             rgba(0, 0, 0, 0.95) 68%,
             #000000 100%
@@ -193,12 +192,9 @@ header {
 }
 
 .hero-content small {
-    color: #5c4333;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     color: var(--text-color-grey);
-    font-family: "Times New Roman", Times, serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-size: var(--step-0);
-    max-width: 46ch;
     max-width: 48ch;
     line-height: 1.6;
     text-align: right;
@@ -231,7 +227,7 @@ header {
         background-color 0.2s ease,
         border-color 0.2s ease,
         transform 0.2s ease,
-        box-shadow 0.2s ease;
+        box-shadow 0.2s ease,
         color 0.2s ease;
 }
 
@@ -473,10 +469,10 @@ header {
 }
 
 .highlight-content p {
-    font-family: "Times New Roman", Times, serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-size: var(--step-0);
     color: var(--text-color-muted);
-    line-height: 1.55;
+    line-height: 1.6;
     margin: 0;
 }
 
@@ -616,7 +612,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     gap: var(--space-xs);
-    font-family: "Times New Roman", Times, serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     z-index: 1;
     min-height: 140px;
     background: linear-gradient(
@@ -708,7 +704,7 @@ header {
     justify-content: space-between;
     align-items: center;
     gap: var(--space-xl);
-    font-family: "Times New Roman", Times, serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .ticket-content {
@@ -986,7 +982,7 @@ header {
     align-items: center;
     justify-content: center;
     gap: var(--space-2xl);
-    font-family: "Times New Roman", Times, serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--bg-color);
     scroll-margin-top: 100px;
 }
